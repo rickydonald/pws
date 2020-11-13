@@ -148,7 +148,7 @@ li a{
 	position: relative;
 	bottom: 100px;
 }
-.container{
+.container1{
 	width: 100%;
 	margin: 0 auto;
 	font-size: 0;
@@ -156,6 +156,15 @@ li a{
 	position: relative;
 	bottom: 95px;
 	padding-top: 150px;
+
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 0;
+	text-align: center;
+	position: relative;
+	bottom: 95px;
 
 }
 .fix{
