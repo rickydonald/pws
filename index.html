@@ -2,328 +2,90 @@
 <html lang="en">
 <head>
 
-<style>
+    <!-- Styling -->
 
-@import url("/assets/css/fonts.css");
-
-*{
-
-  font-family: Inter-Regular;
+    <style>
+        /* font face */
+        @font-face {
+    font-family: 'Inter-Regular';
+    src: url('/assets/fonts/Inter-Regular.ttf');
 }
 
-@media only screen and (max-width: 768px) {
-    .image-padding-fute img{
-      padding-bottom: 30px;
-    }
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('/assets/fonts/Inter-Medium.ttf');
 }
 
-</style>
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('/assets/fonts/Inter-Bold.ttf');
+}
 
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: none;
+            font-family: Inter-Bold;
+        }
+        body{
+            background-image: url("/assets/img/server-cover.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-wrapper h2{
+            color: white;
+            font-size: 26px;
+            text-align: center;
+            text-shadow: black 1px 1px 8px;
+        }
+        .text-wrapper{
+            margin-top: 20px;
+        }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <meta name="description" content="ProtoSync Technologies is a technology and a web development company. ProtoSync provides cheap website development and creating future AI technologies.">
+        /* Mobile Responsive */
+        @media screen and (max-width: 1024px) {
+            .logo-wrapper img{
+                width: 200px;
+            }
+            .text-wrapper h2{
+                font-size: 20px;
+            }
+            .container{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
 
-  <meta name="copyright" content="ProtoSync, https://www.protosync.xyz/">
-
-  <title>ProtoSync Technologies</title>
-
-  <link rel="shortcut icon" href="../assets/trans_favicon.png" type="image/x-icon">
-
-  <link rel="stylesheet" href="../assets/css/maicons.css">
-
-  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
-
-  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.min.css">
-
-  <link rel="stylesheet" href="../assets/css/bootstrap.css">
-
-  <link rel="stylesheet" href="../assets/css/mobster.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoSync Technologies</title>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark navbar-floating">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/img/logosvg.svg" alt="" width="180px">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
-        <li class="nav-item dropdown active">
-          <a class="nav-link" href="index.html" id="navbarDropdown">Home</a>
-
-          <!-- DropDown -->
-          <div class="dropdown-menu" style="visibility:none" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="index.html">H1</a>
-            <a class="dropdown-item active" href="index-2.html">H2</a>
-          </div>
-          <!-- End DropDown -->
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <div class="ml-auto my-2 my-lg-0">
-        <button class="btn btn-primary rounded-pill" onclick=" window.open('http://pws.net.in', '_blank'); return false;">PWS Official Site</a></button>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<div class="page-hero-section bg-image hero-home-2" style="background-image: url(../assets/img/bg_hero_2.svg);">
-  <div class="hero-caption">
-    <div class="container fg-white h-100">
-      <div class="row align-items-center h-100">
-        <div class="col-lg-6 wow fadeInUp">
-          <div class="badge badge-soft mb-2" style="visibility: hidden">#1 Finances App on 2020</div>
-          <h1 class="mb-4 fw-normal">Inspire. Create.</h1>
-          <p class="mb-4" style="font-family: Inter-Regular;">We are all about inspiring<br>future technologies.</p>
-
-          <a href="#" class="btn btn-dark">Get Started</a>
-
+    
+    <section class="container">
+        <div class="main-wrapper">
+        <div class="logo-wrapper">
+            <img src="/assets/brand-img/logosvg.svg" width="450px" alt="ProtoSync Logo" title="ProtoSync Logo">
         </div>
-        <div class="col-lg-6 d-none d-lg-block wow zoomIn">
-          <div class="img-place mobile-preview shadow floating-animate">
-            <img src="../assets/img/showcase copy.png" alt="">
-          </div>          
+        <div class="text-wrapper">
+            <h2>Under Maintenance</h2>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<section id="what-we-do">
-<div class="page-section no-scroll">
-  <div class="container">
-    <h2 class="text-center wow fadeIn">What we do?</h2>
-
-    <div class="row justify-content-center mt-5">
-      <div class="col-lg-10">
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInLeft">
-            <div class="card card-body border-0 text-center shadow pt-5">
-              <div class="svg-icon mx-auto mb-4">
-                <img src="../assets/img/icons/ai.svg" alt="ai" width="186" height="77">
-              </div>
-              <h5 class="fg-gray">Artificial Intelligence</h5>
-              <p class="fs-small">Future is on AI. ProtoSyncX started their work towards creating advanced AI's for future.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
-            <div class="card card-body border-0 text-center shadow pt-5">
-              <div class="svg-icon mx-auto mb-4">
-                <img src="../assets/img/icons/web-development.svg" alt="web-development" width="186" height="77">
-              </div>
-              <h5 class="fg-gray">Web Development</h5>
-              <p class="fs-small">Experience best web development service at lowest cost. We aim to make low cost website for all.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInRight">
-            <div class="card card-body border-0 text-center shadow pt-5">
-              <div class="svg-icon mx-auto mb-4">
-                <img src="../assets/img/icons/project-management.svg" alt="" width="186" height="77">
-              </div>
-              <h5 class="fg-gray">ProtoSync Exploration</h5>
-              <p class="fs-small">ProtoSync innovate and inspire new technologies through ProtoSync Exploration (ProtoSyncX).</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<div class="page-section no-scroll">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7 wow fadeIn">
-        <div class="img-place image-padding-fute">
-          <img src="../assets/img/icons/ai-2.svg" alt="future-tech">
-        </div>
-      </div>
-      <div class="col-lg-5 pl-lg-5 wow fadeInUp">
-        <h2 class="mb-4">Future of Technologies</h2>
-        <p class="mb-4">The Future is on AI, Unlike the natural intelligence displayed by humans and animals, which involves consciousness and emotionality. The distinction between the former and the latter categories is often revealed by the acronym chosen.</p>
-        <a href="#" class="btn btn-outline-primary rounded-pill">See Addons</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Pricing Table -->
-<section id="web-pricing">
-<div class="page-section">
-  <div class="container">
-    <div class="row justify-content-center text-center wow fadeInUp">
-      <div class="col-lg-6">
-        <h2 class="mb-3">Get awesome features on our web services</h2>
-        <p class="mb-5">Our Web Service Plans.</p>
-
-      </div>
-    </div>
-    <div class="pricing-table mt-5 wow fadeInUp">
-      <div class="pricing-item active no-transform">
-        <div class="pricing-header">
-          <h5>Business Plan</h5>
-          <h1 class="fw-normal">Contact Us</h1>
-        </div>
-        <div class="pricing-body">
-          <ul class="theme-list">
-            <li class="list-item">Free SSL</li>
-            <li class="list-item">Dynamic Site</li>
-            <li class="list-item">Free Business Mail</li>
-            <li class="list-item">15+ Pages</li>
-            <li class="list-item">High Moderate Sites</li>
-          </ul>
-        </div>
-        <button class="btn btn-dark">Choose Plan</button>
-      </div>
-      <div class="pricing-item">
-        <div class="pricing-header">
-          <h5>Startup Plans</h5>
-          <h1 class="fw-normal">₹179</h1>
-          <p>*per month</p>
-        </div>
-        <div class="pricing-body">
-          <ul class="theme-list">
-            <li class="list-item">Free SSL</li>
-            <li class="list-item">Static Site</li>
-            <li class="list-item">Contact Form Integration</li>
-            <li class="list-item">1-5 Pages</li>
-            <li class="list-item">Low Moderate Sites</li>
-          </ul>
-        </div>
-        <button class="btn btn-dark" style="margin-bottom:20px;"><a href="#" style="color: white;text-decoration:none;">Choose Plan</a></button>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-
-<!-- Testimonials -->
-
-<!-- About us & FAQ -->
-<section id="about-us-faq">
-<div class="page-section bg-light">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-5 py-3 wow fadeInUp">
-        <h2 class="mb-4">About Us <br>& FAQ</h2>
-        <p>ProtoSync is a technology company, founded by Ricky Donald and Ahamed Nowfil to make websites cost lesser than the price and make cheap websites for everyone. ProtoSync Technologies aims to make new level of IT industry and develop AI technologies for the future.</p>
-
-        <p class="fg-primary fw-medium">Need more helps?</p>
-        <a href="/contact" class="btn btn-gradient btn-split-icon rounded-pill">
-          <span class="icon mai-call-outline"></span> Contact Us
-        </a>
-      </div>
-      <div class="col-lg-7 py-3 no-scroll-x">
-        <div class="accordion accordion-gap" id="accordionFAQ">
-          <div class="accordion-item wow fadeInRight">
-            <div class="accordion-trigger" id="headingFour">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">What is ProtoSync?</button>
-            </div>
-            <div id="collapse1" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFAQ">
-              <div class="accordion-content">
-                <p>ProtoSync means Proton Synchronization and aims to make future technologies.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item wow fadeInRight">
-            <div class="accordion-trigger" id="headingFive">
-              <button class="btn" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">What is PWS?</button>
-            </div>
-            <div id="collapse2" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionFAQ">
-              <div class="accordion-content">
-                <p>PWS is kknown as ProtoSync Web Services. PWS is a web development company owned by ProtoSync Technologies. PWS provides low cost websites. <a href="https://pws.net.in" style="color: black;text-decoration: underline;">Visit PWS>></a></p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item wow fadeInRight">
-            <div class="accordion-trigger" id="headingSix">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">What is ProtoSyncX?</button>
-            </div>
-            <div id="collapse3" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFAQ">
-              <div class="accordion-content">
-                <p>ProtoSyncX stands for ProtoSync Exploration in technologies. ProtoSyncX creates and innvovates advanced AI technologies for the future.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item wow fadeInRight">
-            <div class="accordion-trigger" id="headingSeven">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Does ProtoSync makes Apps?</button>
-            </div>
-            <div id="collapse4" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionFAQ">
-              <div class="accordion-content">
-                <p>Not yet, But in future ProtoSync aims to develop computer application and mobile application. So, till date ProtoSync runs PWS as a web development company.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item wow fadeInRight">
-            <div class="accordion-trigger" id="headingEight">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">How it is possible to make cheap websites?</button>
-            </div>
-            <div id="collapse5" class="collapse" aria-labelledby="headingEight" data-parent="#accordionFAQ">
-              <div class="accordion-content">
-                <p>It is possible by using cheap and best web hosting providers and maintaining reliability of hosting without cost-cutting. To make it cheaper that's why PWS exists for, we make it cheaper and cheaper in future.</p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<!-- Clients -->
-
-
-<div class="page-footer-section bg-dark fg-white">
-  <div class="container mb-5">
-    <div class="row justify-content-center text-center wow fadeInUp">
-      <div class="col-lg-8">
-        <div class="text-center mb-3">
-          <img src="../assets/img/trans_copy.png" alt="" height="80">
-        </div>
-        <h3 class="mb-3" style="font-family: Aileron;letter-spacing: 1px;">ProtoSync</h3>
-        <ul class="nav justify-content-center py-3">
-          <li class="nav-item"><a href="#" class="nav-link fg-white px-4">Home</a></li>
-          <li class="nav-item"><a href="#what-we-do" class="nav-link fg-white px-4">What we do?</a></li>
-          <li class="nav-item"><a href="#web-pricing" class="nav-link fg-white px-4">Pricing</a></li>
-          <li class="nav-item"><a href="#about-us-faq" class="nav-link fg-white px-4">About Us & FAQ</a></li>
-          <li class="nav-item"><a href="/contact" class="nav-link fg-white px-4">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  <hr>
-  <!-- Please don't remove or modify the credits below -->
-  <p class="text-center mt-4 wow fadeIn">Copyright &copy; 2021 <a href="https://www.protosync.xyz/" class="fg-white fw-medium">ProtoSync</a>. All right reserved</p>
-</div>
-
-<script src="../assets/js/jquery-3.5.1.min.js"></script>
-
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-
-<script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-<script src="../assets/vendor/wow/wow.min.js"></script>
-
-<script src="../assets/js/mobster.js"></script>
+    </section>
 
 </body>
 </html>
