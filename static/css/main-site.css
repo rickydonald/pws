@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: AB;
+  src: url("/static/fonts/Aileron-Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.logo h1 {
+  color: white;
+  font-weight: normal;
+  font-family: "AB";
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.nav-items li a:hover {
+  color: #faabff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+main {
+  background: #6743ff;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 85vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lc-text h1 {
+  color: #faabff;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.lc-text p {
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+}
+
+.lc-text h5 {
+  color: white;
+  margin-top: 15px;
+}
+
+.lc-text h5 a {
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 4px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-size: 14   px;
+}
+
+.lc-text h5 a:hover {
+  color: #faabff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.lc-cta {
+  margin-top: 35px;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  border: 2px white solid;
+  padding: 10px 20px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 35px;
+}
+
+.btn:hover {
+  color: black;
+  background: white;
+  font-weight: 500;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-wrapper {
+  background: #7658fd;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.f-links {
+  display: none;
+  margin-top: 10px;
+}
+
+.f-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  #container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 75vh;
+  }
+  header {
+    text-align: center;
+  }
+  nav {
+    display: none;
+  }
+  .right-container {
+    display: none;
+  }
+  footer {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 10%;
+    height: 15vh;
+  }
+  footer .f-links {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main-site.css.map */
